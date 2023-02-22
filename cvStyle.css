@@ -1,0 +1,68 @@
+body{
+	color:purple;
+	font-family:Helvetica;	
+	background:#F6E8EC;
+	text-align:center;
+}
+
+ul{
+	 display: inline-block;
+	text-align:left;
+}
+
+h1{
+	padding:20px;
+}
+
+h2{
+	padding:20px;
+}
+
+@media (min-width: 668px){
+	
+.education{
+	display:flex;
+	justify-content:space-around;
+}
+
+.professional{
+	display:flex;
+	justify-content:space-around;
+}
+}
+
+.education div, .professional div{
+	border:3px #ccc solid;
+	padding:20px;
+	margin:20px;
+}
+
+.ed1{
+	flex:1;
+	order:3;
+	flex-basis:25%;
+}
+
+.ed2{
+	flex:1;
+	order:2;
+	flex-basis:25%;	
+}
+
+.ed3{
+	flex:1;
+	order:1;
+	flex-basis:25%;
+}
+
+.experience {
+	flex:2;
+	order:2;
+	flex-basis:50%;
+}
+
+.skills{
+	flex:1;
+	order:1;
+	flex-basis:50%;
+}
