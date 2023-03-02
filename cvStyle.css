@@ -1,68 +1,76 @@
 body{
-	color:purple;
+	color:#9381ff;
 	font-family:Helvetica;	
-	background:#F6E8EC;
+	background:#b8b8ff;
 	text-align:center;
 }
 
-ul{
-	 display: inline-block;
-	text-align:left;
-}
-
 h1{
-	padding:20px;
+	padding-top: 55px;
+	color:white;
+	font-size: 5.5em;
 }
 
 h2{
+	font-size: 3.0em;
 	padding:20px;
-}
-
-@media (min-width: 668px){
 	
-.education{
-	display:flex;
-	justify-content:space-around;
 }
 
-.professional{
-	display:flex;
-	justify-content:space-around;
-}
-}
-
-.education div, .professional div{
-	border:3px #ccc solid;
-	padding:20px;
-	margin:20px;
+h3{
+	font-size: 1.5em;
+	padding:5px;
+	color:white;
 }
 
-.ed1{
-	flex:1;
-	order:3;
-	flex-basis:25%;
+h4{
+	font-size: 1.5em;
+	font-weight: bold;
+	color:black;
 }
 
-.ed2{
-	flex:1;
-	order:2;
-	flex-basis:25%;	
+p{
+	font-size: 1.0em;
+	padding:5px;
+	color: black;
 }
 
-.ed3{
-	flex:1;
-	order:1;
-	flex-basis:25%;
+img {
+	border-radius: 50%;
+	border-style:groove;
+	border-color:black;
 }
 
-.experience {
-	flex:2;
-	order:2;
-	flex-basis:50%;
+ul{
+	display: inline-block;
+	text-align:left;
+	padding:10px;
+	color:black;
 }
 
-.skills{
-	flex:1;
-	order:1;
-	flex-basis:50%;
+.show{
+	background-color: white;
+	color:#9381ff;
+	border-radius: 20px;
+	border-style:groove;
+	border-color:black;
+	padding:25px;
+}
+
+.edu{
+	background-color: #9381ff ;
+	color: white;
+	border-radius: 20px;
+	padding:25px;
+	
+}
+.row{
+	margin-top:50px;
+	justify-content:space-between;
+	
+}
+
+.contact{
+	padding-right: 300px;
+ 
 }
