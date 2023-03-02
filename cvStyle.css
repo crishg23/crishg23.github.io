@@ -44,8 +44,11 @@ img {
 ul{
 	display: inline-block;
 	text-align:left;
-	padding:10px;
+	padding:20px;
 	color:black;
+	font-size: 1.5em;
+	font-weight: bold;
+	
 }
 
 .show{
