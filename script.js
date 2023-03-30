@@ -6,12 +6,32 @@ let userAnswer
 let computerAnswer
 let result
 
-pickChoice.forEach(pickChoice=>pickChoice.addEventListener('click', (e)=>{
-	userAnswer=e.target.id
-	userAnswerDisplay.innerHTML=userAnswer
-	generateComputerAnswer()
-	getResult()
-}))
+
+
+
+function playGame() {
+const pickChoice = document.querySelectorAll('button');
+  pickChoice.forEach(pickChoice=>pickChoice.addEventListener('click', handleClick)
+);
+
+  for (let i = 0; i < 3; i++) {
+    function handleClick(e) {
+      userAnswer = e.target.id;
+      userAnswerDisplay.innerHTML = userAnswer;
+      generateComputerAnswer();
+      getResult();
+
+      if (i === 2) {
+        // Remove event listeners after three games
+        pickChoice.forEach((button) => {
+          choice.removeEventListener('click', handleClick);
+        });
+      }
+    }
+  }
+}
+
+
 
 function generateComputerAnswer(){
 	const randomNumber=Math.floor(Math.random()*3 +1 )
@@ -51,6 +71,6 @@ function getResult(){
 		result='you lost!'
 	}
 	resultDisplay.innerHTML=result
-	
 }
+playGame();
 
